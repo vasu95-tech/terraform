@@ -1,0 +1,30 @@
+# Local .terraform directories (contains binaries, plugins, and modules)
+**/.terraform/*
+
+# .tfstate files contain sensitive infrastructure layout and secrets
+*.tfstate
+*.tfstate.*
+
+# Crash logs
+crash.log
+crash.*.log
+
+# Exclude all variable files as they typically contain sensitive credentials
+*.tfvars
+*.tfvars.json
+
+# Override files containing temporary local configurations
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+#Terraform plan files
+*.tfplan
+
+# Include microcode directories if you use them
+.terraform.rc
+terraform.rc
+
+# Provider lock file (consider commiting if consistent provider versions are critical in diff envs)
+.terraform.lock.hcl
